@@ -1,24 +1,25 @@
 const mongoose = require('mongoose')
 const Schema = mongoose.Schema
 
-const Book = new Schema({
+const Books = new Schema({
     title: {
-        type: string,
+        type: String,
         required: true
     },
     author: {
-        type: string,
+        type: String,
         required: true
     },
     // nop - Number of pages
-    nop:{
-        type: number,
+    number_of_pages:{
+        type: Number,
         required: false
     },
     publisher:{
-        type:string,
+        type:String,
         required: false
     }
 },
-    {timeseries: true}
+    {timestamps: true}
 )
+module.exports = mongoose.model('books', Books)

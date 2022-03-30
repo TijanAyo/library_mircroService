@@ -1,0 +1,20 @@
+{
+  "name": "customer",
+  "version": "1.0.0",
+  "description": "This is the customer service",
+  "main": "index.js",
+  "scripts": {
+    "dev": " nodemon app.js",
+    "start": "node app.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
