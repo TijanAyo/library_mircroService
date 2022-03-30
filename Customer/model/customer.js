@@ -14,7 +14,7 @@ const Customer = new Schema({
         type: String,
         required: true
     },
-    additional_infor:{
+    additional_info:{
         type: String,
         required: false
     }
