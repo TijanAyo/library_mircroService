@@ -13,7 +13,9 @@ const Books = require('../Books/model/book')
 
 // checking status
 app.get('/status', (req, res)=>{
-    res.status(200).json({message: 'Book Service working okay'})
+    return res.status(200).json({
+        message: `Book Service running on Port: ${process.env.PORT}`
+    })
 })
 
 
